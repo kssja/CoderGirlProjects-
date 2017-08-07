@@ -21,7 +21,7 @@ public class Calculator{
         return  a * b;
     }
 
-    public static double divide(int a, int b) {
+    public static double divide(int a, double b) {
         return a/b;
 
     }
@@ -56,7 +56,7 @@ public class Calculator{
         // print statements to test that it works right.
 
         System.out.println("8 divided by 2 equals " + divide(8,2));
-        System.out.println("2 divded by 4 equals " + divide(2,4));
+        System.out.println("1 divded by 3 equals " + divide(1,3));
 
     }
 }
