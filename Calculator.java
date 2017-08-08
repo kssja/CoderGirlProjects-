@@ -56,7 +56,7 @@ public class Calculator{
         // print statements to test that it works right.
 
         System.out.println("8 divided by 2 equals " + df.format(divide(8,2)));
-        System.out.println("1 divded by 3 equals " + df.foramt(divide(1,3)));
+        System.out.println("1 divded by 3 equals " + df.format(divide(1,3)));
 
     }
 }
