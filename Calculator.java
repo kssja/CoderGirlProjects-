@@ -55,8 +55,8 @@ public class Calculator{
         // Now it's your turn! Create a divide() method and write some
         // print statements to test that it works right.
 
-        System.out.println("8 divided by 2 equals " + divide(8,2));
-        System.out.println("1 divded by 3 equals " + divide(1,3));
+        System.out.println("8 divided by 2 equals " + df.format(divide(8,2)));
+        System.out.println("1 divded by 3 equals " + df.foramt(divide(1,3)));
 
     }
 }
