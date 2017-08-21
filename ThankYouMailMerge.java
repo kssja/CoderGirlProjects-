@@ -33,7 +33,7 @@ public static void main(String[] args){
 while(keepGoing){
         
         out.println("\nPlease enter your first and last name  \n ");
-        name = keyboard.nextLine(); 
+         name = keyboard.nextLine(); 
     
         out.println("How much would you like to contribute?");
         amt = keyboard.nextDouble();
