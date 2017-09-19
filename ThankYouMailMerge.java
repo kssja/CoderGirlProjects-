@@ -14,8 +14,8 @@ public class ThankYouMailMerge{
         boolean keepGoing = true;
 
         while(keepGoing){
-            out.println("\nPlease enter your first and last name  \n ");
-            name = keyboard.nextLine();
+          //  out.println("\nPlease enter your first and last name  \n ");
+           // name = keyboard.nextLine();
             if(name.equalsIgnoreCase("quit")){
                 out.println("Did you mean to enter quit?" +
                     "\nEnter quit again to end the program or yes to continue");
