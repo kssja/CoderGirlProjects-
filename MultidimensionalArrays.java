@@ -12,45 +12,47 @@ public class MultidimensionalArrays{
     }
 
     public static void printTable(int temps[][]){
-        String time[][] = new String[4][1];
-        time[0][0]="7:00 am";
-        time[1][0]="3:00 pm";
-        time[2][0]="7:00 pm";
-        time[3][0]="3:00 am";
+        String time[] = new String[4];
+        time[0]="7:00 am";
+        time[1]="3:00 pm";
+        time[2]="7:00 pm";
+        time[3]="3:00 am";
 
         for( int row=0; row<4; row++){
-            for(int column=0; column<1; column++){
-                System.out.print(time[row][column]+"\t");
-            }
+            
+                System.out.print(time[row]+"\t");
+            
+            
             for(int j = 0; j<7; j++){
 
                 System.out.print(temps[row][j]+"\t");
             }
             System.out.println("");
+        }
 
         }
-    }
+    
 
     public static void printRowAverage(int temps[][]){
         int sum=0;
 
-        String time[][] = new String[4][1];
-        time[0][0]="7:00 am";
-        time[1][0]="3:00 pm";
-        time[2][0]="7:00 pm";
-        time[3][0]="3:00 am";
+        String time[] = new String[4];
+        time[0]="7:00 am";
+        time[1]="3:00 pm";
+        time[2]="7:00 pm";
+        time[3]="3:00 am";
 
         for(int row=0; row < 4 ;row++){
-            for(int column=0; column<7; column++){
+           for(int j = 0; j<7; j++){
 
-                sum += temps[row][column];
+                sum += temps[row][j];
 
             }
            DecimalFormat df = new DecimalFormat("#,###,##0.00");
         
             float ravg=sum/(float)7;
 
-            System.out.println("\n\t\t" +time[row][0]+": Average "+df.format(ravg));
+            System.out.println("\n\t\t" +time[row]+": Average "+df.format(ravg));
 
             sum=0;
         }
